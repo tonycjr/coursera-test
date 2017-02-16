@@ -16,6 +16,19 @@
     
     1. Capture Secreenshot
     
+    import org.openqa.selenium.TakesScreenshot;
+    import org.openqa.selenium.OutputType;
+    import org.apache.commons.io.FileUtils;
+    
+    File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    
+    // Code to copy the screenshot in the desired location
+		try {
+			FileUtils.copyFile(scrFile, new File("C:\\Selenium\\TestData\\Screenshot\\Screenshotgoogle.jpg"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  
 
   
   </body>
