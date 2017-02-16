@@ -29,6 +29,15 @@
         // TODO Auto-generated catch block <br>
 	  e.printStackTrace(); <br>
 	}  <br>
-
+    <br>
+    2. Start Firefox browser with WedbDriver.Gecko.Driver<br> 
+    <br>
+    import org.openqa.selenium.WebDriver; <br>
+    import org.openqa.selenium.firefox.FirefoxDriver; <br>
+    <br>
+    WebDriver driver; <br>
+    System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver-v0.14.0-win64\\geckodriver.exe"); <br>
+    driver = new FirefoxDriver(); <br>
+    driver.get("http://www.google.com");<br>
   </body>
 </html>
