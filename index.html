@@ -14,22 +14,21 @@
     
     <h1>Selenium Test Automation Java</h1>
     
-    1. Capture Secreenshot
-    
-    import org.openqa.selenium.TakesScreenshot;
-    import org.openqa.selenium.OutputType;
-    import org.apache.commons.io.FileUtils;
-    
-    File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-    
-    // Code to copy the screenshot in the desired location
-		try {
-			FileUtils.copyFile(scrFile, new File("C:\\Selenium\\TestData\\Screenshot\\Screenshotgoogle.jpg"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}  
+    1. Capture Secreenshot <b>
+    <b>	  
+    import org.openqa.selenium.TakesScreenshot;<b>
+    import org.openqa.selenium.OutputType; <b>
+    import org.apache.commons.io.FileUtils; <b>
+    <b>
+    File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); <b>
+    <b>
+    // Code to copy the screenshot in the desired location <b>
+    try { <b>
+          FileUtils.copyFile(scrFile, new File("C:\\Selenium\\TestData\\Screenshot\\Screenshotgoogle.jpg")); <b>
+	} catch (IOException e) { <b>
+        // TODO Auto-generated catch block <b>
+	  e.printStackTrace(); <b>
+	}  <b>
 
-  
   </body>
 </html>
